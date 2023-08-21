@@ -12,6 +12,7 @@ git clone https://github.com/dmitriilopotovskii/testtask.git
 - Run <code>./vendor/bin/sail up</code>
 - Run <code>./vendor/bin/sail npm install</code>
 - Run <code>./vendor/bin/sail npm run dev</code>
+- Run <code>touch database/database.sqlite</code>
 - Run <code>./vendor/bin/sail artisan migrate --seed</code>
 - Go to <code>https://localhost/
 - Go to <code>https://localhost/admin
