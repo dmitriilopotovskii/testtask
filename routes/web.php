@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\QuestionAnswerConfigController;
 use App\Http\Controllers\QuestionAnswerController;
 use App\Models\QuestionAnswer;
@@ -17,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+require __DIR__.'/auth.php';
+
+
 Route::get('/', function () {
     return view('faq',
         [
@@ -31,6 +37,6 @@ Route::get('/admin', function () {
             'viewData' => QuestionAnswerConfig::first()
 
         ]);
-});
+})->middleware('auth');
 Route::resource('qas', QuestionAnswerController::class);
 Route::post('/qaSettings', QuestionAnswerConfigController::class);
