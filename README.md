@@ -15,7 +15,7 @@ git clone https://github.com/dmitriilopotovskii/testtask.git
 - Run <code>./vendor/bin/sail npm run dev</code>
 - Run <code>touch database/database.sqlite</code>
 - Run <code>./vendor/bin/sail artisan migrate --seed</code>
-- Go to <code>http://localhost/
-- Go to <code>http://localhost/admin
+- Open <code>http://localhost/ </code>
+- Open <code>http://localhost/admin </code>
 - username:<code>test@example.com</code> password:<code>password</code>
 
